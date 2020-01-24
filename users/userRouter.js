@@ -114,6 +114,7 @@ function validateUser(req, res, next) {
       message: 'missing required name field'
     });
   }
+  next();
 }
 
 function validatePost(req, res, next) {
@@ -127,6 +128,7 @@ function validatePost(req, res, next) {
       message: 'missing requred text field'
     });
   }
+  next();
 }
 
 module.exports = router;
